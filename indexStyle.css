@@ -20,7 +20,7 @@ nav{
 #home{
     padding-top:50px;
 }
-.masthead {
+.masthead{
     height: 100vh;
     min-height: 500px;
     background-image: url('images/resto.jpg');
@@ -116,3 +116,5 @@ display: inline-block;
 width: 30%;   
 }
 
+#reservationModalLabel{
+justify-content: center;}
