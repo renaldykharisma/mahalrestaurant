@@ -1,11 +1,18 @@
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){ */
+
+html {
+    overflow-y: scroll !important;
+}
+
 body{
     position: relative;
+    padding-right: 0px !important; 
 }
-}
+
 nav{
     height: 80px;
     background-color: rgba(0, 0, 0, 0.734);
+    padding-right: 0px !important;
 }
 .navbar-brand{
     font-family: 'Dancing Script', cursive;
@@ -118,3 +125,8 @@ width: 30%;
 
 #reservationModalLabel{
 justify-content: center;}
+
+
+.modal-open{
+    padding-right: 0px !important;
+}

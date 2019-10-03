@@ -31,7 +31,7 @@
 
    
     </head>
-    <body>
+    <body class="modal-open">
     <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
            
@@ -135,16 +135,16 @@
                             <button type="button" id="btnsub" name="submit" class="btn btn-primary btn-next">Apply</button>
                         </form>
                         <script>
-                                $(function() {
-                                $( "#datepicker-1" ).datepicker();
-                            });
+                        $(function() {
+                        $( "#datepicker-1" ).datepicker();
+                        });
 
-                                $('#btnsub').click(function(e) {
-                                    if($('input').val() === '') {
-                                        e.preventDefault();
-                                        alert('there is still empty field in the form, please check it carefully');
-                                    }
-                                    });
+                        $('#btnsub').click(function(e) {
+                            if($('input').val() === '') {
+                                e.stopImmediatePropagation()
+                                alert('there is still empty field in the form, please check it carefully');
+                            }
+                        });
                         </script>
                     </div>
                 </div>
@@ -157,35 +157,23 @@
                       <div class="modal-content">
 
                         <div class="modal-body">
-
-
                             <button type="button" class="btn btn-primary btn-prev">Prev</button>
-                            <button type="button" class="btn btn-primary btn-next">Next</button>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                        </div>
-        
+                            <button type="button" class="btn btn-primary btn-next">Save</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">CANCEL</button>
+                        </div>        
                       </div>
                     </div>
                   </div>
 
             <script>
-            $("div[id^='reservationModal']").each(function(){
-  
-                var currentModal = $(this);
-                
-                //click next
-                currentModal.find('.btn-next').click(function(){
-                    currentModal.modal('hide');
-                    currentModal.closest("div[id^='reservationModal']").nextAll("div[id^='reservationModal']").first().modal('show'); 
-                });
-                
-                //click prev
-                currentModal.find('.btn-prev').click(function(){
-                    currentModal.modal('hide');
-                    currentModal.closest("div[id^='reservationModal']").prevAll("div[id^=reservationModal']").first().modal('show'); 
-                });
-
-                });
+            $("#btnsub").on("click", function(){
+                $('#reservationModal').modal('hide');
+                $('#reservationModal2').modal('show')
+            });
+            $(".btn-prev").on("click", function(){
+                $('#reservationModal2').modal('hide');
+                $('#reservationModal').modal('show');
+            });
             </script>
 
             </div>
