@@ -1,0 +1,34 @@
+.jumbotron{
+    background-image: url("images/fbackground.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
+    width: 100%;
+}
+.menuheader{
+    font-family: 'Slabo 27px', serif;
+}
+.btnHome{
+    margin-top: 30px;
+    /* height: 60px;
+    width: 20%; */
+}
+.dish{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+.card-deck{
+    margin-bottom: 30px;
+}
+/* .card:hover{
+    transform: scale(1.1);
+  } */
+.footerPart{
+    background-color: black;
+}

@@ -1,14 +1,11 @@
 /* @media only screen and (max-width: 600px){ */
-
 html {
     overflow-y: scroll !important;
 }
-
 body{
     position: relative;
     padding-right: 0px !important; 
 }
-
 nav{
     height: 80px;
     background-color: rgba(0, 0, 0, 0.734);
@@ -19,11 +16,17 @@ nav{
     color: white;
     font-size: 30px !important;
 }
-
 .nav-link{
     color: white;
 }
-
+#rsvBtn{
+    position: relative;;
+    height: 50px;
+    width: 250px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
 #home{
     padding-top:50px;
 }
@@ -38,8 +41,7 @@ nav{
 #h1title{
     font-family: 'Pacifico', cursive;
     color: white;
-    font-size:100px; 
-
+    font-size:70px; 
 }
 #hquote{
     font-family: 'Courgette', cursive;
@@ -56,20 +58,24 @@ nav{
     align-items: center;
     background-color: black;
 }
-
 #story{
     padding-top: 50px;
+    justify-content: center;
 }
-
 #stry{
+    position: relative;
     font-family: 'Dancing Script', cursive;
     font-size: 35px;
 }
-
-#menu{
-    padding-top: 70px; 
+.stryPic{
+    position: fixed;
 }
-
+.stryContent{
+    margin-top: 100px; 
+}
+#menu{
+    padding-top: 150px; 
+}
 .carousel-inner img {
     max-height: 500px !important;
     width: 100%;
@@ -85,15 +91,15 @@ nav{
     font-family: 'Bree Serif', serif;
     font-size: 40px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 90px;
+    margin-bottom: 50px;
 }
-.card:hover{
-    transform: scale(1.1);
-  }
+.maindish{
+    margin-top: 100px;
 
+}
 .col-md-6{
-   margin-top:30px;
-   
+   margin-top:30px;   
 }
 #galery{
     padding-top: 70px;
@@ -119,14 +125,37 @@ nav{
     margin-bottom: 20px;
   }
 #formact{
-display: inline-block;
-width: 30%;   
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 30px;   
 }
-
+.footerPart{
+    background-color: black;
+}
 #reservationModalLabel{
-justify-content: center;}
-
-
+justify-content: center;
+}
 .modal-open{
     padding-right: 0px !important;
+}
+
+.favmen .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+}
+.favmen .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.favmen .carousel-indicators .active {
+background: black;
+}
+#favheader{
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
